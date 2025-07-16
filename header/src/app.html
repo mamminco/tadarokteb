@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fa">
+	<head>
+		<style>
+			@media (max-width: 767px) {
+				:root {
+					--tx-canvas-size: 420!important;
+				}
+			}
+			:root{
+				--tx-canvas-size:1440;
+				--tx: calc(100vw / var(--tx-canvas-size));
+				--my-tx-size: var(--tx);
+			}
+
+		</style>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
